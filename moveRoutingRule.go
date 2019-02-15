@@ -55,12 +55,7 @@ func main() {
 	log.Println("                            ]")
 
 	//
-	// Getting the ID of the IP that needs to be moved and the VNIC Id of the interface on the same subnet as the IP
-	//
-	//privateIpID,vnicId,err := helpers.GetPrivateIPID(virtualNetworkClient,ctx,attachedVNICs,ipAddress)
-
-	//
-	// Moving the IP on the first Vnic on the same subnet as the IP address to be assigned
+	// Moving the routing
 	//
 	routeTables 			:= helpers.GetRouteInfoFromMetadata()
 	updateRouteTableRequests	:= helpers.BuildRouteUpdateStructs(virtualNetworkClient,ctx,attachedVNICs,routeTables)
