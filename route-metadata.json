@@ -1,0 +1,23 @@
+{
+  "route_tables":
+[
+  {
+    "rtId": "ocid1.routetable.oc1.eu-frankfurt-1.<Route_ID>",
+    "RtRules": [
+      {
+        "destination": "2.2.2.2/32",
+        "gateway": "10.0.0.1"
+      }
+    ]
+  },
+  {
+    "rtId": "ocid1.routetable.oc1.eu-frankfurt-1.<Route_ID>",
+    "RtRules": [
+      {
+        "destination": "9.9.9.9/32",
+        "gateway": "10.0.0.1"
+      }
+    ]
+  }
+]
+}
